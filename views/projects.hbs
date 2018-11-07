@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>{{name}}</title>
+
+</head>
+
+<body>
+    {{> header}}
+    <!--screamit is a helper and welcome message is an argument to that helper-->
+    <p>Portfolio {{scream "Welcome to my website"}} {{getCurrentYear}}</p>
+    <p>Some text here</p>
+
+    {{> footer}}
+</body>
+
+</html>

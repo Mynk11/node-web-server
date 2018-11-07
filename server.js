@@ -59,6 +59,15 @@ app.get("/first", (req, res) => {
 
 });
 
+app.get("/projects", (req, res) => {
+    res.render('projects.hbs', {
+        first: "Game of ***",
+        developer: "MG"
+    });
+
+});
+
+
 app.get("/about", (req, res) => {
     res.render('about', {
         first: "Shivi",
