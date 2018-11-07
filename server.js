@@ -30,7 +30,7 @@ app.use((req, res, next) => {
     console.log(`${now}:${req.method}:${req.url}:`);
 
 });
-
+//middleware
 // app.use((req, res) => {
 //     res.render('maintenance');
 // });
@@ -74,6 +74,6 @@ app.get('/bad', (req, res) => {
 
 });
 //use npm run nodemon to use nodemon
-app.listen(3000, () => {
-    console.log("server is listening at 3000");
+app.listen(3008, () => {
+    console.log("server is listening at 3008");
 });
