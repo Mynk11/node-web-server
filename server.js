@@ -66,6 +66,14 @@ app.get("/about", (req, res) => {
     });
 
 });
+app.get("/done", (req, res) => {
+    res.render('done', {
+        first: "Shivi",
+        developer: "Gupta"
+    });
+
+});
+
 //express by default send js object as json in response
 app.get('/bad', (req, res) => {
     res.send({
