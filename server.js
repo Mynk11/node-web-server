@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 var app = express();
 
 app.set('view engine', 'hbs');
@@ -74,6 +75,6 @@ app.get('/bad', (req, res) => {
 
 });
 //use npm run nodemon to use nodemon
-app.listen(3008, () => {
-    console.log("server is listening at 3008");
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
